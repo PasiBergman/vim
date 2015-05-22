@@ -1,0 +1,8 @@
+~/.vim/bundle/*
+bundle/*
+~/.vim/backups/*
+backups/*
+~/.vim/doc/*
+doc/*
+~/.vim/autoload/*
+autoload/*
