@@ -1,3 +1,5 @@
+.gist-vim
+*.un~
 ~/.vim/bundle/*
 bundle/*
 ~/.vim/backups/*
