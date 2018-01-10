@@ -1,6 +1,12 @@
 # vim
 My VIM setup sync repository.
 
+On macOS install VIM with 
+`brew install vim`
+
+On Linux install VIM with
+`sudo apt-get update && sudo apt-get install -y vim`
+
 Requires
 ```bash
 mkdir ~/.vim ~/.vim/bundle
