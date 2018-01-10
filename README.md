@@ -2,13 +2,12 @@
 My VIM setup sync repository.
 
 Requires
-mkdir ~/.vim
-mkdir ~/.vim/bundle
-
+```bash
+mkdir ~/.vim ~/.vim/bundle
+git clone https://github.com/PasiBergman/vim.git ~
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ln -s ~/vim/.vimrc ~/.vimrc
+```
 
-ln -s ~/.vim/.vimrc ~/.vimrc
+Start `vim` and do a **:PluginInstall**
 
-vim +PluginInstall +qall
-
-Or just run vim and do a :PluginInstall
