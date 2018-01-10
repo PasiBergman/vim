@@ -72,6 +72,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
 filetype plugin indent on
@@ -113,8 +114,6 @@ elseif has('win64')
 endif
 
 
-" colorscheme desert
-colorscheme monokai
 
 " ================ General Config ====================
 
@@ -132,8 +131,8 @@ if has("autocmd")
 " TypeScript files
   augroup tsc
     autocmd BufRead,BufNewFile *.ts set filetype=tsc
-	autocmd QuickFixCmdPost [^l]* nested cwindow
-	autocmd QuickFixCmdPost    l* nested lwindow
+    autocmd QuickFixCmdPost [^l]* nested cwindow
+    autocmd QuickFixCmdPost    l* nested lwindow
   augroup END
 endif
 
@@ -319,3 +318,13 @@ nnoremap <F12>c :exe ':silent !chromium-browser %'<CR>
 nnoremap th :tabnext<CR>
 nnoremap tl :tabprev<CR>
 nnoremap tn :tabnew<CR>
+
+silent !mkdir ~/.vim/.backup > /dev/null 2>&1
+silent !mkdir ~/.vim/.undo > /dev/null 2>&1
+silent !mkdir ~/.vim/.swp > /dev/null 2>&1
+
+set undodir=~/.vim/.undo//
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
+
+colorscheme onedark
